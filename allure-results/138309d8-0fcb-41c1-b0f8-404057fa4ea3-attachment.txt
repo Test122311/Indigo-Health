@@ -1,0 +1,9 @@
+
+################################################################################################################################################
+Starting Execution:	"1 out of 1" test cases in the current suite
+Test Method:		"TestPackage.TestClass.test"
+################################################################################################################################################
+[ReportManager] Failed to Tap "By.id: tvSkip". @09-02-2023 18:32:38.0781 PM
+[ReportManager] Successfully created attachment "Element Action Exception - Tap - Stacktrace" @09-02-2023 18:32:38.0787 PM
+[ReportManager] Failed to Tap "By.id: tvSkip". @09-02-2023 18:32:38.0793 PM
+[ReportManager] Successfully created attachment "Element Action Exception - Tap - Stacktrace" @09-02-2023 18:32:38.0794 PM
