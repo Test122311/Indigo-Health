@@ -1,2 +1,7 @@
 # Project exclude paths
 /target/
+/extent-reports
+/execution-summary
+/.idea
+/logs
+/generate_allure_report.bat
