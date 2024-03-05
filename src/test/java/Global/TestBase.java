@@ -43,15 +43,7 @@ public class TestBase {
 
     }
 
-    @AfterSuite
-    public void quit(Method method) throws IOException {
-        TakeSnapshot(method.getName());
-    //    driver.quit();
-    }
 
-    static void TakeSnapshot(String name) throws IOException {
-        File SrcFile = ((TakesScreenshot) TestBase.driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(SrcFile, new File("D:\\projects\\Provider\\SnapShots\\" + name + ".png"));
 
-    }
+
 }

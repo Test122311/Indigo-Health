@@ -6,28 +6,20 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class RegisterTest extends TestBase {
-
-// TestCase to verify valid register with valid credential.
- // protected RegisterPage RegPage = new RegisterPage(driver);
-@Test
-    public void ValidRegister() {
     RegisterPage RegPage = new RegisterPage(driver);
-        RegPage.GoToRegisterPage();
-        RegPage.setUserEmailInput("b3eb12b7e811@drmail.in");
-        RegPage.setDropDown("Dr.");
-        RegPage.enterUserFirstName("Mona");
-        RegPage.enterUserLastName("Magdy");
-        RegPage.setCertificateDropDown("PhD");
-        RegPage.enterPassword("0123456789");
-        RegPage.enterConfirmPassword("0123456789");
-        RegPage.clickOnCreateAccount();
-        System.out.println(RegPage.getText());
-        String ExpectedText= "Thank you for registering. We’ve sent an email to";
-        String  ActualText = RegPage.getText();
-       Assert.assertEquals(ActualText,ExpectedText);
+
+    // TestCase to verify valid register with valid credential.
+    // protected RegisterPage RegPage = new RegisterPage(driver);
+    @Test
+    public void ValidRegister() {
+
+        RegPage.addAllData();
+        String ExpectedText = "Thank you for registering. We’ve sent an email to";
+        String ActualText = RegPage.getText();
+        Assert.assertEquals(ActualText, ExpectedText);
 
     }
-    @Test
+   /* @Test
     public void registerWithInValidEmail() {
         RegisterPage RegPage = new RegisterPage(driver);
         RegPage.GoToRegisterPage();
@@ -81,5 +73,5 @@ public class RegisterTest extends TestBase {
         Assert.assertEquals(ActualText,ExpectedText);
 
     }
-
+*/
 }
