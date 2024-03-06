@@ -1,16 +1,18 @@
 package com.pages;
 
 import com.Global.GeneralConstants;
+import com.shaft.gui.element.TouchActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends PageBase {
+    TouchActions actions =  new TouchActions();
     private static LoginPage instance;
     By UserNameInput = By.name("username");
     By PasswordInput = By.name("password");
-    By signInButton = By.xpath("//button[@type=\"submit\"]");
-    By acceptButton = By.xpath("//button[@type=\"button\"]");
-    By ErrorEmail = By.xpath("//div[@data-testid=\"titleError\"]");
+    By signInButton = By.xpath("//button[@id='sign-in-1']");
+    By acceptButton = By.xpath("//button[@id='welcome-1']");
+    By ErrorEmail = By.xpath("//div[@data-testid='titleError']");
     By ErrorPass = By.className("error-info");
 
     public LoginPage(WebDriver driver) {
@@ -33,11 +35,13 @@ public class LoginPage extends PageBase {
     }
 
     public void login(String userName, String pass) {
-        driver.findElement(UserNameInput).sendKeys(userName);
-        driver.findElement(PasswordInput).sendKeys(pass);
+        actions.element()
+                .waitToBeReady(UserNameInput)
+                .typeAppend(UserNameInput,userName)
+                .typeAppend(PasswordInput,pass)
+                .click(signInButton)
+                .click(acceptButton);
 
-        driver.findElement(signInButton).click();
-        driver.findElement(acceptButton).click();
     }
 
 }

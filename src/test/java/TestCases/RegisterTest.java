@@ -1,24 +1,42 @@
 package TestCases;
 
 import Global.TestBase;
+import com.Global.GeneralConstants;
+import com.github.javafaker.Faker;
+import com.pages.LoginPage;
 import com.pages.RegisterPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class RegisterTest extends TestBase {
-    RegisterPage RegPage = new RegisterPage(driver);
+
 
     // TestCase to verify valid register with valid credential.
     // protected RegisterPage RegPage = new RegisterPage(driver);
-    @Test
-    public void ValidRegister() {
-
-        RegPage.addAllData();
+   /* @Test
+    public void TC_001() {
         String ExpectedText = "Thank you for registering. We’ve sent an email to";
-        String ActualText = RegPage.getText();
+        String ActualText = RegisterPage.getInstance(driver).addAllData("b3eb12b7e811@drmail.in");
         Assert.assertEquals(ActualText, ExpectedText);
 
+    }*/
+
+    @Test
+    public void TC_002() {
+        Faker faker = new Faker();
+        String email =faker.name().firstName()+faker.name().bloodGroup()+"@gmail.com";
+
+        driver.get("https://indigoproviderportal.vercel.app/login");
+        RegisterPage.getInstance(driver)
+                .addAllData(email);
+
+        RegisterPage.getInstance(driver)
+                .confirmationUrl();
+
+        LoginPage.getInstance(driver)
+                .login(email, "P@ssw0rdP@ssw0rd");
     }
+
    /* @Test
     public void registerWithInValidEmail() {
         RegisterPage RegPage = new RegisterPage(driver);

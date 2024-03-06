@@ -33,6 +33,11 @@
       <artifactId>SHAFT_ENGINE</artifactId>
       <version>${shaft_engine.version}</version>
     </dependency>
+    <dependency>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <version>1.0.2</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -58,6 +63,8 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.9.7</version>
           </dependency>
+
+
         </dependencies>
         <configuration>
           <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>

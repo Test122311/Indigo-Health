@@ -5,6 +5,15 @@ import org.openqa.selenium.WebDriver;
 
 public class OnboardingPage extends PageBase{
 
+    By businessName = By.xpath("//*[contains(@id,'companyName')]");
+    By phoneNum = By.xpath("//*[contains(@id,'phoneNumbe')]");
+    By npiNumber = By.xpath("//*[contains(@id,'npiNumber')]");
+    By timeZone= By.xpath("//*[contains(@id,'time-zone-1')]");
+    By nextBtn= By.xpath("//*[contains(@id,'business-info-bt')]");
+    By nextBtn2= By.xpath("//*[contains(@id,'business-logo-btn')]");
+    By nextBtn3= By.xpath("//*[contains(@id,'personal-info");
+
+    By nextBtn4= By.xpath("//*[contains(@id,'personal-photo");
     By UserNameInput= By.name("username");
     By PasswordInput=By.name("password");
     By signInButton=By.xpath("//button[@type=\"submit\"]");

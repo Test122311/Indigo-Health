@@ -1,5 +1,7 @@
 package com.pages;
 
+import com.github.javafaker.Faker;
+import com.shaft.driver.SHAFT;
 import com.shaft.gui.element.TouchActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,77 +21,60 @@ public class RegisterPage extends PageBase {
     By ConfirmPasswordInput = By.name("confirm_password");
     By CreateAccountButton = By.xpath("//button[@type=\"submit\"]");
     By ThankYouText = By.xpath("//p[@class=\"mb-8\"]");
+    By confirmationUrl =  By.id("confirmationUrl");
     By ErrorEmail = By.xpath("//div[@data-testid=\"titleError\"]");
     By ErrorPass = By.xpath("//div[@class=\"error-info mb-12\"]");
     By ErrorConfirmPass = By.xpath("//div[@data-testid=\"titleError\"]");
-
+    static RegisterPage instance;
 
     public RegisterPage(WebDriver driver) {
         super(driver);
     }
-
-    public void GoToRegisterPage() {
-        driver.findElement(NoAccount).click();
+    public static RegisterPage getInstance(WebDriver driver) {
+        if (instance == null) {
+            instance = new RegisterPage(driver);
+        }
+        return instance;
     }
 
-    public void setUserEmailInput(String UserEmail) {
-        driver.findElement(UserEmailInput).sendKeys(UserEmail);
+    public void goToRegisterPage() {
+        actions.element()
+                .click(NoAccount);
     }
 
-    public void setDropDown(String titleValue) {
-        WebElement titleDropdown = driver.findElement(titleDropDown);
-        Select title = new Select(titleDropdown);
-        title.selectByValue(titleValue);
-    }
 
-    public void enterUserFirstName(String UserFName) {
 
-        driver.findElement(userFirstNameInput).sendKeys(UserFName);
-    }
 
-    public void enterUserLastName(String UserLName) {
 
-        driver.findElement(UserLastNameInput).sendKeys(UserLName);
-    }
-
-    public void setCertificateDropDown(String certificateValue) {
-        WebElement certificateDropdown = driver.findElement(certificateDropDown);
-        Select Certificate = new Select(certificateDropdown);
-        Certificate.selectByValue(certificateValue);
-    }
-
-    public void enterPassword(String password) {
-
-        driver.findElement(passwordInput).sendKeys(password);
-    }
-
-    public void enterConfirmPassword(String confirmPassword) {
-        driver.findElement(ConfirmPasswordInput).sendKeys(confirmPassword);
-    }
-
-    public void clickOnCreateAccount() {
-
-        driver.findElement(CreateAccountButton).click();
-    }
 
     public String getText() {
         return actions.element().getText(ThankYouText);
     }
 
 
-
-
-    public void addAllData() {
+    public void confirmationUrl() {
         actions.element()
-                .click(NoAccount)
-                .typeAppend(UserEmailInput, "b3eb12b7e811@drmail.in")
+                .getText(confirmationUrl);
+        System.out.println("xx"+driver.findElement(confirmationUrl).getAttribute("value"));
+        driver.get(driver.findElement(confirmationUrl).getAttribute("value"));
+    }
+
+    public String addAllData(String email) {
+        Faker faker = new Faker();
+        goToRegisterPage();
+        String testURL = driver.getCurrentUrl()+"?testUserOwner=some_string&suppressEmail=true";
+       driver.get(testURL);
+        return actions.element()
+                .typeAppend(UserEmailInput, email)
                 .select(titleDropDown, "Dr.")
-                .typeAppend(userFirstNameInput, "Mona")
-                .typeAppend(UserLastNameInput, "Magdy")
+                .typeAppend(userFirstNameInput, faker.name().firstName())
+                .typeAppend(UserLastNameInput, faker.name().lastName())
                 .select(certificateDropDown, "PhD")
-                .typeAppend(passwordInput, "0123456789")
-                .typeAppend(ConfirmPasswordInput, "0123456789")
-                .click(CreateAccountButton);
+                .typeAppend(passwordInput, "P@ssw0rdP@ssw0rd")
+                .typeAppend(ConfirmPasswordInput, "P@ssw0rdP@ssw0rd")
+                .click(CreateAccountButton)
+                .waitToBeReady(ThankYouText)
+                .getText(ThankYouText);
 
     }
 }
