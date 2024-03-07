@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.asserts.Assertion;
 
 public class RegisterPage extends PageBase {
   TouchActions actions =  new TouchActions();
@@ -53,11 +54,17 @@ public class RegisterPage extends PageBase {
 
 
     public void confirmationUrl() {
-        actions.element()
+      String text =  actions.element()
                 .getText(confirmationUrl);
-        System.out.println("xx"+driver.findElement(confirmationUrl).getAttribute("value"));
         driver.get(driver.findElement(confirmationUrl).getAttribute("value"));
     }
+    public String checkConfirmation() {
+        String text =  actions.element()
+                .getText(confirmationUrl);
+
+        return text;
+    }
+
 
     public String addAllData(String email) {
         Faker faker = new Faker();

@@ -4,6 +4,7 @@ import Global.TestBase;
 import com.Global.GeneralConstants;
 import com.github.javafaker.Faker;
 import com.pages.LoginPage;
+import com.pages.OnboardingPage;
 import com.pages.RegisterPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,6 +18,9 @@ public class RegisterTest extends TestBase {
     public void TC_001() {
         String ExpectedText = "Thank you for registering. We’ve sent an email to";
         String ActualText = RegisterPage.getInstance(driver).addAllData("b3eb12b7e811@drmail.in");
+
+         RegisterPage.getInstance(driver)
+                .checkConfirmation();
         Assert.assertEquals(ActualText, ExpectedText);
 
     }*/
@@ -35,6 +39,12 @@ public class RegisterTest extends TestBase {
 
         LoginPage.getInstance(driver)
                 .login(email, "P@ssw0rdP@ssw0rd");
+
+        try {
+            OnboardingPage.getInstance(driver).onBoardingData();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
    /* @Test
