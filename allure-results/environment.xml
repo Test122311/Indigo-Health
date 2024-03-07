@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <environment>
   <parameter>
+    <key>appender.console.type</key>
+    <value>Console</value>
+  </parameter>
+  <parameter>
+    <key>cucumber.publish.quiet</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
+    <key>appender.console.layout.pattern</key>
+    <value>%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}} %highlight{${LOG_LEVEL_PATTERN:-%5p}}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=green, DEBUG=green bold, TRACE=blue} %style{[@%L - %t]}{magenta} %style{%logger{36}}{cyan} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-}</value>
+  </parameter>
+  <parameter>
     <key>java.specification.version</key>
     <value>19</value>
   </parameter>
   <parameter>
+    <key>sun.cpu.isalist</key>
+    <value>amd64</value>
+  </parameter>
+  <parameter>
+    <key>sun.arch.data.model</key>
+    <value>64</value>
+  </parameter>
+  <parameter>
+    <key>idea.test.cyclic.buffer.size</key>
+    <value>1048576</value>
+  </parameter>
+  <parameter>
     <key>java.vendor.url</key>
     <value>https://java.oracle.com/</value>
+  </parameter>
+  <parameter>
+    <key>jiraUrl</key>
+    <value>https://</value>
+  </parameter>
+  <parameter>
+    <key>ReportBugs</key>
+    <value>false</value>
   </parameter>
   <parameter>
     <key>sun.boot.library.path</key>
@@ -14,14 +46,38 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -listener com.shaft.listeners.TestNGListener -socket57602 @w@C:\Users\mohamed.abdelhay\AppData\Local\Temp\idea_working_dirs_testng3.tmp -temp C:\Users\mohamed.abdelhay\AppData\Local\Temp\idea_testng5.tmp</value>
+    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -listener com.shaft.listeners.TestNGListener -socket54335 @w@C:\Users\mohamed.abdelhay\AppData\Local\Temp\idea_working_dirs_testng7044.tmp -temp C:\Users\mohamed.abdelhay\AppData\Local\Temp\idea_testng5.tmp</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
     <value>release</value>
   </parameter>
   <parameter>
+    <key>appender.console.filter.threshold.type</key>
+    <value>ThresholdFilter</value>
+  </parameter>
+  <parameter>
+    <key>maximumPerformanceMode</key>
+    <value>0</value>
+  </parameter>
+  <parameter>
     <key>autoMaximizeBrowserWindow</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
+    <key>java.specification.vendor</key>
+    <value>Oracle Corporation</value>
+  </parameter>
+  <parameter>
+    <key>java.version.date</key>
+    <value>2023-01-17</value>
+  </parameter>
+  <parameter>
+    <key>java.home</key>
+    <value>C:\Users\mohamed.abdelhay\.jdks\openjdk-19.0.2</value>
+  </parameter>
+  <parameter>
+    <key>testng.dtd.http</key>
     <value>true</value>
   </parameter>
   <parameter>
@@ -33,12 +89,12 @@
     <value>false</value>
   </parameter>
   <parameter>
-    <key>java.specification.name</key>
-    <value>Java Platform API Specification</value>
-  </parameter>
-  <parameter>
     <key>java.vm.specification.vendor</key>
     <value>Oracle Corporation</value>
+  </parameter>
+  <parameter>
+    <key>java.specification.name</key>
+    <value>Java Platform API Specification</value>
   </parameter>
   <parameter>
     <key>videoParams_recordVideo</key>
@@ -49,12 +105,28 @@
     <value>debug, STDOUT, LOGFILE</value>
   </parameter>
   <parameter>
+    <key>appender.file.layout.type</key>
+    <value>PatternLayout</value>
+  </parameter>
+  <parameter>
+    <key>sun.management.compiler</key>
+    <value>HotSpot 64-Bit Tiered Compilers</value>
+  </parameter>
+  <parameter>
+    <key>generateAllureReportArchive</key>
+    <value>false</value>
+  </parameter>
+  <parameter>
     <key>java.runtime.version</key>
     <value>19.0.2+7-44</value>
   </parameter>
   <parameter>
     <key>appender.file.fileName</key>
     <value>target/logs/log4j.log</value>
+  </parameter>
+  <parameter>
+    <key>file.encoding</key>
+    <value>UTF-8</value>
   </parameter>
   <parameter>
     <key>forceCheckForElementVisibility</key>
@@ -89,6 +161,10 @@
     <value>Java Virtual Machine Specification</value>
   </parameter>
   <parameter>
+    <key>dockerCommandTimeout</key>
+    <value>30</value>
+  </parameter>
+  <parameter>
     <key>databaseLoginTimeout</key>
     <value>30</value>
   </parameter>
@@ -101,12 +177,28 @@
     <value>C:\Users\mohamed.abdelhay\.jdks\openjdk-19.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python311\Scripts\;C:\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\mohamed.abdelhay\AppData\Local\Android\Sdk\platform-tools;C:\Users\mohamed.abdelhay\AppData\Local\Android\Sdk\tools;ANDROID_HOME;C:\Program Files (x86)\Java\jre1.8.0_361;C:\Program Files (x86)\Java\jre1.8.0_361\bin;C:\Users\mohamed.abdelhay\AppData\Local\Microsoft\WindowsApps;C:\Users\mohamed.abdelhay\AppData\Roaming\npm;C:\Users\mohamed.abdelhay\AppData\Local\Programs\Git\cmd;.</value>
   </parameter>
   <parameter>
+    <key>stderr.encoding</key>
+    <value>UTF-8</value>
+  </parameter>
+  <parameter>
     <key>java.vendor</key>
     <value>Oracle Corporation</value>
   </parameter>
   <parameter>
+    <key>cucumber.execution.strict</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
+    <key>sun.io.unicode.encoding</key>
+    <value>UnicodeLittle</value>
+  </parameter>
+  <parameter>
     <key>screenshotParams_scalingFactor</key>
     <value>1</value>
+  </parameter>
+  <parameter>
+    <key>executionAddress</key>
+    <value>local</value>
   </parameter>
   <parameter>
     <key>apiConnectionManagerTimeout</key>
@@ -125,6 +217,10 @@
     <value>30</value>
   </parameter>
   <parameter>
+    <key>appender.console.filter.threshold.level</key>
+    <value>info</value>
+  </parameter>
+  <parameter>
     <key>screenshotParams_highlightElements</key>
     <value>true</value>
   </parameter>
@@ -135,6 +231,10 @@
   <parameter>
     <key>java.vm.specification.version</key>
     <value>19</value>
+  </parameter>
+  <parameter>
+    <key>os.name</key>
+    <value>Windows 10</value>
   </parameter>
   <parameter>
     <key>mobile_appActivity</key>
@@ -151,262 +251,6 @@
   <parameter>
     <key>mobile_automationName</key>
     <value>UiAutomator2</value>
-  </parameter>
-  <parameter>
-    <key>retryMaximumNumberOfAttempts</key>
-    <value>0</value>
-  </parameter>
-  <parameter>
-    <key>appender.console.layout.disableAnsi</key>
-    <value>false</value>
-  </parameter>
-  <parameter>
-    <key>os.version</key>
-    <value>10.0</value>
-  </parameter>
-  <parameter>
-    <key>reportTestCasesExecution</key>
-    <value>false</value>
-  </parameter>
-  <parameter>
-    <key>pageLoadTimeout</key>
-    <value>30</value>
-  </parameter>
-  <parameter>
-    <key>java.vm.name</key>
-    <value>OpenJDK 64-Bit Server VM</value>
-  </parameter>
-  <parameter>
-    <key>apiConnectionTimeout</key>
-    <value>30</value>
-  </parameter>
-  <parameter>
-    <key>forceCheckNavigationWasSuccessful</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>os.arch</key>
-    <value>amd64</value>
-  </parameter>
-  <parameter>
-    <key>appender.file.type</key>
-    <value>File</value>
-  </parameter>
-  <parameter>
-    <key>setVerbose</key>
-    <value>1</value>
-  </parameter>
-  <parameter>
-    <key>setParallel</key>
-    <value>NONE</value>
-  </parameter>
-  <parameter>
-    <key>setPreserveOrder</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>skipTestsWithLinkedIssues</key>
-    <value>false</value>
-  </parameter>
-  <parameter>
-    <key>clickUsingJavascriptWhenWebDriverClickFails</key>
-    <value>false</value>
-  </parameter>
-  <parameter>
-    <key>authorization</key>
-    <value>:</value>
-  </parameter>
-  <parameter>
-    <key>disableLogging</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>screenshotParams_watermarkOpacity</key>
-    <value>0.2</value>
-  </parameter>
-  <parameter>
-    <key>java.vm.compressedOopsMode</key>
-    <value>Zero based</value>
-  </parameter>
-  <parameter>
-    <key>intellij.debug.agent</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>targetOperatingSystem</key>
-    <value>WINDOWS</value>
-  </parameter>
-  <parameter>
-    <key>screenshotParams_watermark</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>jboss.modules.system.pkgs</key>
-    <value>com.intellij.rt</value>
-  </parameter>
-  <parameter>
-    <key>browserNavigationTimeout</key>
-    <value>60</value>
-  </parameter>
-  <parameter>
-    <key>videoParams_scope</key>
-    <value>DriverSession</value>
-  </parameter>
-  <parameter>
-    <key>sun.java.launcher</key>
-    <value>SUN_STANDARD</value>
-  </parameter>
-  <parameter>
-    <key>user.country</key>
-    <value>US</value>
-  </parameter>
-  <parameter>
-    <key>cucumber.snippet-type</key>
-    <value>underscore</value>
-  </parameter>
-  <parameter>
-    <key>apiSocketTimeout</key>
-    <value>30</value>
-  </parameter>
-  <parameter>
-    <key>createAnimatedGif</key>
-    <value>false</value>
-  </parameter>
-  <parameter>
-    <key>java.runtime.name</key>
-    <value>OpenJDK Runtime Environment</value>
-  </parameter>
-  <parameter>
-    <key>generateExtentReports</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>animatedGif_frameDelay</key>
-    <value>500</value>
-  </parameter>
-  <parameter>
-    <key>captureElementName</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>forceCheckElementLocatorIsUnique</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>appender.file.filter.threshold.level</key>
-    <value>debug</value>
-  </parameter>
-  <parameter>
-    <key>mobile_deviceName</key>
-    <value>emulator-5554</value>
-  </parameter>
-  <parameter>
-    <key>captureWebDriverLogs</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>setDataProviderThreadCount</key>
-    <value>1</value>
-  </parameter>
-  <parameter>
-    <key>appender.console.type</key>
-    <value>Console</value>
-  </parameter>
-  <parameter>
-    <key>cucumber.publish.quiet</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>appender.console.layout.pattern</key>
-    <value>%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}} %highlight{${LOG_LEVEL_PATTERN:-%5p}}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=green, DEBUG=green bold, TRACE=blue} %style{[@%L - %t]}{magenta} %style{%logger{36}}{cyan} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-}</value>
-  </parameter>
-  <parameter>
-    <key>sun.cpu.isalist</key>
-    <value>amd64</value>
-  </parameter>
-  <parameter>
-    <key>sun.arch.data.model</key>
-    <value>64</value>
-  </parameter>
-  <parameter>
-    <key>idea.test.cyclic.buffer.size</key>
-    <value>1048576</value>
-  </parameter>
-  <parameter>
-    <key>jiraUrl</key>
-    <value>https://</value>
-  </parameter>
-  <parameter>
-    <key>ReportBugs</key>
-    <value>false</value>
-  </parameter>
-  <parameter>
-    <key>appender.console.filter.threshold.type</key>
-    <value>ThresholdFilter</value>
-  </parameter>
-  <parameter>
-    <key>maximumPerformanceMode</key>
-    <value>0</value>
-  </parameter>
-  <parameter>
-    <key>java.specification.vendor</key>
-    <value>Oracle Corporation</value>
-  </parameter>
-  <parameter>
-    <key>java.version.date</key>
-    <value>2023-01-17</value>
-  </parameter>
-  <parameter>
-    <key>java.home</key>
-    <value>C:\Users\mohamed.abdelhay\.jdks\openjdk-19.0.2</value>
-  </parameter>
-  <parameter>
-    <key>testng.dtd.http</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>appender.file.layout.type</key>
-    <value>PatternLayout</value>
-  </parameter>
-  <parameter>
-    <key>sun.management.compiler</key>
-    <value>HotSpot 64-Bit Tiered Compilers</value>
-  </parameter>
-  <parameter>
-    <key>generateAllureReportArchive</key>
-    <value>false</value>
-  </parameter>
-  <parameter>
-    <key>file.encoding</key>
-    <value>UTF-8</value>
-  </parameter>
-  <parameter>
-    <key>dockerCommandTimeout</key>
-    <value>30</value>
-  </parameter>
-  <parameter>
-    <key>stderr.encoding</key>
-    <value>UTF-8</value>
-  </parameter>
-  <parameter>
-    <key>cucumber.execution.strict</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
-    <key>sun.io.unicode.encoding</key>
-    <value>UnicodeLittle</value>
-  </parameter>
-  <parameter>
-    <key>executionAddress</key>
-    <value>local</value>
-  </parameter>
-  <parameter>
-    <key>appender.console.filter.threshold.level</key>
-    <value>info</value>
-  </parameter>
-  <parameter>
-    <key>os.name</key>
-    <value>Windows 10</value>
   </parameter>
   <parameter>
     <key>setThreadCount</key>
@@ -437,6 +281,14 @@
     <value>false</value>
   </parameter>
   <parameter>
+    <key>retryMaximumNumberOfAttempts</key>
+    <value>0</value>
+  </parameter>
+  <parameter>
+    <key>appender.console.layout.disableAnsi</key>
+    <value>false</value>
+  </parameter>
+  <parameter>
     <key>cucumber.plugin</key>
     <value>pretty, json:allure-results/cucumber.json, html:allure-results/cucumberReport.html, io.github.shafthq.shaft.listeners.CucumberTestRunnerListener</value>
   </parameter>
@@ -449,16 +301,56 @@
     <value>;</value>
   </parameter>
   <parameter>
+    <key>os.version</key>
+    <value>10.0</value>
+  </parameter>
+  <parameter>
+    <key>reportTestCasesExecution</key>
+    <value>false</value>
+  </parameter>
+  <parameter>
+    <key>pageLoadTimeout</key>
+    <value>30</value>
+  </parameter>
+  <parameter>
     <key>screenshotParams_highlightMethod</key>
     <value>AI</value>
+  </parameter>
+  <parameter>
+    <key>java.vm.name</key>
+    <value>OpenJDK 64-Bit Server VM</value>
+  </parameter>
+  <parameter>
+    <key>apiConnectionTimeout</key>
+    <value>30</value>
   </parameter>
   <parameter>
     <key>cucumber.ansi-colors.disabled</key>
     <value>false</value>
   </parameter>
   <parameter>
+    <key>forceCheckNavigationWasSuccessful</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
+    <key>os.arch</key>
+    <value>amd64</value>
+  </parameter>
+  <parameter>
     <key>cucumber.execution.order</key>
     <value>lexical</value>
+  </parameter>
+  <parameter>
+    <key>appender.file.type</key>
+    <value>File</value>
+  </parameter>
+  <parameter>
+    <key>setVerbose</key>
+    <value>1</value>
+  </parameter>
+  <parameter>
+    <key>setParallel</key>
+    <value>NONE</value>
   </parameter>
   <parameter>
     <key>java.vm.info</key>
@@ -477,8 +369,32 @@
     <value>Cp1252</value>
   </parameter>
   <parameter>
+    <key>setPreserveOrder</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
+    <key>skipTestsWithLinkedIssues</key>
+    <value>false</value>
+  </parameter>
+  <parameter>
+    <key>clickUsingJavascriptWhenWebDriverClickFails</key>
+    <value>false</value>
+  </parameter>
+  <parameter>
+    <key>authorization</key>
+    <value>:</value>
+  </parameter>
+  <parameter>
+    <key>disableLogging</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
     <key>targetBrowserName</key>
     <value>firefox</value>
+  </parameter>
+  <parameter>
+    <key>screenshotParams_watermarkOpacity</key>
+    <value>0.2</value>
   </parameter>
   <parameter>
     <key>sun.stderr.encoding</key>
@@ -489,12 +405,20 @@
     <value>\</value>
   </parameter>
   <parameter>
+    <key>java.vm.compressedOopsMode</key>
+    <value>Zero based</value>
+  </parameter>
+  <parameter>
     <key>sun.stdout.encoding</key>
     <value>UTF-8</value>
   </parameter>
   <parameter>
     <key>appender.file.layout.pattern</key>
     <value>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</value>
+  </parameter>
+  <parameter>
+    <key>targetOperatingSystem</key>
+    <value>WINDOWS</value>
   </parameter>
   <parameter>
     <key>allure.link.custom.pattern</key>
@@ -513,6 +437,10 @@
     <value>false</value>
   </parameter>
   <parameter>
+    <key>screenshotParams_watermark</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
     <key>cleanExtentReportsDirectoryBeforeExecution</key>
     <value>true</value>
   </parameter>
@@ -527,6 +455,10 @@
   <parameter>
     <key>waitForLazyLoading</key>
     <value>true</value>
+  </parameter>
+  <parameter>
+    <key>browserNavigationTimeout</key>
+    <value>60</value>
   </parameter>
   <parameter>
     <key>mobile_appPackage</key>
@@ -545,11 +477,31 @@
     <value>false</value>
   </parameter>
   <parameter>
+    <key>videoParams_scope</key>
+    <value>DriverSession</value>
+  </parameter>
+  <parameter>
     <key>forceCheckTextWasTypedCorrectly</key>
     <value>true</value>
   </parameter>
   <parameter>
     <key>databaseQueryTimeout</key>
+    <value>30</value>
+  </parameter>
+  <parameter>
+    <key>sun.java.launcher</key>
+    <value>SUN_STANDARD</value>
+  </parameter>
+  <parameter>
+    <key>user.country</key>
+    <value>US</value>
+  </parameter>
+  <parameter>
+    <key>cucumber.snippet-type</key>
+    <value>underscore</value>
+  </parameter>
+  <parameter>
+    <key>apiSocketTimeout</key>
     <value>30</value>
   </parameter>
   <parameter>
@@ -569,6 +521,10 @@
     <value>https:///{}</value>
   </parameter>
   <parameter>
+    <key>createAnimatedGif</key>
+    <value>false</value>
+  </parameter>
+  <parameter>
     <key>cucumber.execution.wip</key>
     <value>false</value>
   </parameter>
@@ -581,16 +537,52 @@
     <value>30</value>
   </parameter>
   <parameter>
+    <key>java.runtime.name</key>
+    <value>OpenJDK Runtime Environment</value>
+  </parameter>
+  <parameter>
+    <key>generateExtentReports</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
     <key>java.vendor.url.bug</key>
     <value>https://bugreport.java.com/bugreport/</value>
+  </parameter>
+  <parameter>
+    <key>animatedGif_frameDelay</key>
+    <value>500</value>
   </parameter>
   <parameter>
     <key>SHAFT.CrossBrowserMode</key>
     <value>off</value>
   </parameter>
   <parameter>
+    <key>captureElementName</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
     <key>user.dir</key>
     <value>C:\Users\mohamed.abdelhay\IdeaProjects\WithShift</value>
+  </parameter>
+  <parameter>
+    <key>forceCheckElementLocatorIsUnique</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
+    <key>appender.file.filter.threshold.level</key>
+    <value>debug</value>
+  </parameter>
+  <parameter>
+    <key>mobile_deviceName</key>
+    <value>emulator-5554</value>
+  </parameter>
+  <parameter>
+    <key>captureWebDriverLogs</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
+    <key>setDataProviderThreadCount</key>
+    <value>1</value>
   </parameter>
   <parameter>
     <key>java.vm.version</key>
