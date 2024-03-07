@@ -98,7 +98,9 @@ public class OnboardingPage extends PageBase{
                 .select(timeZone, GeneralConstants.TIME_ZONE)
                 .click(nextBtn)
                 .click(nextBtn2)
-                ;
+                .type(npiNumberInput,faker.number().digits(10))
+                .click(nextBtn3)
+                .click(nextBtn4);
         Thread.sleep(1000000);
                // .select(timeZone,);
 
