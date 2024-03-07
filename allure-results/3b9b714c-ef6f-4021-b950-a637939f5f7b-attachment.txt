@@ -1,0 +1,298 @@
+[INFO ] 2024-03-07 16:13:20.536 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                      Powered by SHAFT Engine v7.2.20230503                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2024-03-07 16:13:23.323 [main] ReportManager - Loaded OpenCV "opencv_java470".
+[INFO ] 2024-03-07 16:13:23.330 [main] ReportManager - Folder "execution-summary" was not found, it may have already been deleted.
+[INFO ] 2024-03-07 16:13:23.331 [main] ReportManager - Initializing Allure Reporting Environment...
+[INFO ] 2024-03-07 16:13:23.479 [main] ReportManager - Initializing Extent Reporting Environment...
+[INFO ] 2024-03-07 16:13:23.969 [main] Utils - [TestNG] Running:
+  C:\Users\mohamed.abdelhay\IdeaProjects\WithShift\Test.xml
+
+[INFO ] 2024-03-07 16:13:23.993 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                Starting execution of set up configuration method                                                
+                                                         'TestCases.RegisterTest.SetUp'                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2024-03-07 16:13:24.077 [main] ReportManager -  The browser name is : SHAFT
+[INFO ] 2024-03-07 16:13:24.096 [main] ReportManager - Setting "targetOperatingSystem" property with "WINDOWS".
+[INFO ] 2024-03-07 16:13:24.098 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"".
+[INFO ] 2024-03-07 16:13:24.099 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"".
+[INFO ] 2024-03-07 16:13:24.181 [main] ReportManager - Attempting to run locally on: "WINDOWS | Firefox".
+[INFO ] 2024-03-07 16:13:24.182 [main] ReportManager - Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time...
+[DEBUG] 2024-03-07 16:13:24.492 [main] ResolutionCache - Resolution firefox=123 in cache (valid until 16:27:34 07/03/2024 EET)
+[DEBUG] 2024-03-07 16:13:24.493 [main] ResolutionCache - Resolution firefox123=0.34.0 in cache (valid until 16:13:56 07/03/2024 EET)
+[INFO ] 2024-03-07 16:13:24.494 [main] WebDriverManager - Using geckodriver 0.34.0 (resolved driver for Firefox 123)
+[DEBUG] 2024-03-07 16:13:24.510 [main] WebDriverManager - Driver geckodriver 0.34.0 found in cache
+[INFO ] 2024-03-07 16:13:24.512 [main] WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\mohamed.abdelhay\.cache\selenium\geckodriver\win64\0.34.0\geckodriver.exe
+[WARN ] 2024-03-07 16:13:24.931 [Exec Stream Pumper] ReportManager - 1709820804928	geckodriver	INFO	Listening on 127.0.0.1:14976
+[WARN ] 2024-03-07 16:13:25.879 [Exec Stream Pumper] ReportManager - console.warn: services.settings: Ignoring preference override of remote settings server
+[WARN ] 2024-03-07 16:13:25.880 [Exec Stream Pumper] ReportManager - console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[WARN ] 2024-03-07 16:13:26.152 [Exec Stream Pumper] ReportManager - Dynamically enable window occlusion 0
+[WARN ] 2024-03-07 16:13:26.323 [Exec Stream Pumper] ReportManager - Read port: 57774
+[WARN ] 2024-03-07 16:13:26.347 [Exec Stream Pumper] ReportManager - WebDriver BiDi listening on ws://127.0.0.1:1386
+[WARN ] 2024-03-07 16:13:26.412 [Exec Stream Pumper] ReportManager - 1709820806413	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[WARN ] 2024-03-07 16:13:28.551 [Exec Stream Pumper] ReportManager - DevTools listening on ws://127.0.0.1:1386/devtools/browser/9554f1b6-e69b-4885-84e4-38879fbd601e
+[INFO ] 2024-03-07 16:13:28.809 [main] ReportManager - Successfully Opened: "WINDOWS | Firefox".
+[INFO ] 2024-03-07 16:13:29.144 [main] ReportManager - Initial window size: (1291, 747)
+[INFO ] 2024-03-07 16:13:29.431 [main] ReportManager - Window size after SWD Maximize: (1550, 838)
+[INFO ] 2024-03-07 16:13:29.443 [main] ReportManager - Maximize window "New screen size is now: (1550, 838)".
+[INFO ] 2024-03-07 16:13:31.510 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of suite setup configuration method                                             
+                                          'com.shaft.listeners.internal.ConfigurationHelper.suiteSetup'                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2024-03-07 16:13:31.515 [main] ReportManager - Initializing Important Links...
+[INFO ] 2024-03-07 16:13:31.530 [main] ReportManager - Initializing Properties...
+[INFO ] 2024-03-07 16:13:31.704 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 1' test cases in the current suite                                        
+                                                  Test Method: 'TestCases.RegisterTest.TC_002'                                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[WARN ] 2024-03-07 16:13:31.916 [Exec Stream Pumper] ReportManager - console.warn: LoginRecipes: "Falling back to a synchronous message for: https://indigoproviderportal.vercel.app."
+[INFO ] 2024-03-07 16:13:35.220 [main] ReportManager - Moved the mouse to the middle of the element.
+[WARN ] 2024-03-07 16:13:35.229 [Exec Stream Pumper] ReportManager - console.warn: LoginRecipes: "Falling back to a synchronous message for: https://indigoproviderportal.vercel.app."
+[INFO ] 2024-03-07 16:13:35.454 [main] ReportManager - Click "No account?".
+[WARN ] 2024-03-07 16:13:35.462 [Exec Stream Pumper] ReportManager - console.warn: LoginRecipes: "Falling back to a synchronous message for: https://indigoproviderportal.vercel.app."
+[INFO ] 2024-03-07 16:13:36.686 [main] ReportManager - Type append "TaniaO-@gmail.com" into "mail@mail.com".
+[INFO ] 2024-03-07 16:13:37.245 [main] ReportManager - Select "Dr." from "By.name: name.personalTitle".
+[INFO ] 2024-03-07 16:13:37.333 [main] ReportManager - Type append "Hung" into "First Name".
+[INFO ] 2024-03-07 16:13:37.390 [main] ReportManager - Type append "D'Amore" into "Last Name".
+[INFO ] 2024-03-07 16:13:38.262 [main] ReportManager - Select "PhD" from "By.name: name.postNominalLetters".
+[INFO ] 2024-03-07 16:13:38.334 [main] ReportManager - Type append "P@ssw0rdP@ssw0rd" into "Password".
+[INFO ] 2024-03-07 16:13:38.400 [main] ReportManager - Type append "P@ssw0rdP@ssw0rd" into "Password one more time".
+[WARN ] 2024-03-07 16:13:38.490 [Exec Stream Pumper] ReportManager - console.warn: LoginRecipes: "Falling back to a synchronous message for: https://indigoproviderportal.vercel.app."
+[INFO ] 2024-03-07 16:13:38.718 [main] ReportManager - Click "Create account".
+[INFO ] 2024-03-07 16:13:38.719 [main] ReportManager - Waiting for element to be present; elementLocator "By.xpath: //p[@class="mb-8"]", isExpectedToBeVisible"true"...
+[WARN ] 2024-03-07 16:13:56.188 [Exec Stream Pumper] ReportManager - 1709820836189	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+[ERROR] 2024-03-07 16:19:38.748 [main] ReportManager - org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [678eb700-f414-4408-bdef-7df2dac15542, fullPageScreenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:1386, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21768, moz:profile: C:\Users\MOHAME~1.ABD\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: eager, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:1386/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 30000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webSocketUrl: ws://127.0.0.1:1386/session...}
+Session ID: 678eb700-f414-4408-bdef-7df2dac15542
+ org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:328)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:38)
+ org.openqa.selenium.firefox.AddHasFullPageScreenshot$1.getFullPageScreenshotAs(AddHasFullPageScreenshot.java:66)
+ org.openqa.selenium.firefox.FirefoxDriver.getFullPageScreenshotAs(FirefoxDriver.java:258)
+ com.shaft.gui.internal.image.ScreenshotHelper.makeFullScreenshot(ScreenshotHelper.java:30)
+ com.shaft.gui.internal.image.ScreenshotManager.takeFullPageScreenshot(ScreenshotManager.java:259)
+ com.shaft.gui.internal.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:427)
+ com.shaft.gui.internal.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:373)
+ com.shaft.gui.internal.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:124)
+ com.shaft.gui.element.internal.ElementActionsHelper.takeScreenshot(ElementActionsHelper.java:594)
+ com.shaft.gui.element.internal.ElementActionsHelper.createReportAttachments(ElementActionsHelper.java:1018)
+ com.shaft.gui.element.internal.ElementActionsHelper.reportActionResult(ElementActionsHelper.java:1056)
+ com.shaft.gui.element.internal.ElementActionsHelper.failAction(ElementActionsHelper.java:957)
+ com.shaft.gui.element.internal.ElementActionsHelper.failAction(ElementActionsHelper.java:899)
+ com.shaft.gui.element.internal.FluentElementActions.waitToBeReady(FluentElementActions.java:1005)
+ com.shaft.gui.element.internal.FluentElementActions.waitToBeReady(FluentElementActions.java:976)
+ com.pages.RegisterPage.addAllData(RegisterPage.java:83)
+ TestCases.RegisterTest.TC_002(RegisterTest.java:35)
+ java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+ java.base/java.lang.reflect.Method.invoke(Method.java:578)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+ org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+ org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+ org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+ org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+ java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+ org.testng.TestRunner.privateRun(TestRunner.java:829)
+ org.testng.TestRunner.run(TestRunner.java:602)
+ org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+ org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.net.http.HttpTimeoutException: request timed out
+ java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:844)
+ java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+ org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:299)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:38)
+ org.openqa.selenium.firefox.AddHasFullPageScreenshot$1.getFullPageScreenshotAs(AddHasFullPageScreenshot.java:66)
+ org.openqa.selenium.firefox.FirefoxDriver.getFullPageScreenshotAs(FirefoxDriver.java:258)
+ com.shaft.gui.internal.image.ScreenshotHelper.makeFullScreenshot(ScreenshotHelper.java:30)
+ com.shaft.gui.internal.image.ScreenshotManager.takeFullPageScreenshot(ScreenshotManager.java:259)
+ com.shaft.gui.internal.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:427)
+ com.shaft.gui.internal.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:373)
+ com.shaft.gui.internal.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:124)
+ com.shaft.gui.element.internal.ElementActionsHelper.takeScreenshot(ElementActionsHelper.java:594)
+ com.shaft.gui.element.internal.ElementActionsHelper.createReportAttachments(ElementActionsHelper.java:1018)
+ com.shaft.gui.element.internal.ElementActionsHelper.reportActionResult(ElementActionsHelper.java:1056)
+ com.shaft.gui.element.internal.ElementActionsHelper.failAction(ElementActionsHelper.java:957)
+ com.shaft.gui.element.internal.ElementActionsHelper.failAction(ElementActionsHelper.java:899)
+ com.shaft.gui.element.internal.FluentElementActions.waitToBeReady(FluentElementActions.java:1005)
+ com.shaft.gui.element.internal.FluentElementActions.waitToBeReady(FluentElementActions.java:976)
+ com.pages.RegisterPage.addAllData(RegisterPage.java:83)
+ TestCases.RegisterTest.TC_002(RegisterTest.java:35)
+ java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+ java.base/java.lang.reflect.Method.invoke(Method.java:578)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+ org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+ org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+ org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+ org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+ java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+ org.testng.TestRunner.privateRun(TestRunner.java:829)
+ org.testng.TestRunner.run(TestRunner.java:602)
+ org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+ org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+[ERROR] 2024-03-07 16:22:38.766 [main] ReportManager - org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [678eb700-f414-4408-bdef-7df2dac15542, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:1386, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21768, moz:profile: C:\Users\MOHAME~1.ABD\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: eager, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:1386/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 30000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webSocketUrl: ws://127.0.0.1:1386/session...}
+Session ID: 678eb700-f414-4408-bdef-7df2dac15542
+ org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:328)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+ com.shaft.gui.internal.image.ScreenshotManager.takeViewportScreenshot(ScreenshotManager.java:236)
+ com.shaft.gui.internal.image.ScreenshotManager.takeFullPageScreenshot(ScreenshotManager.java:263)
+ com.shaft.gui.internal.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:427)
+ com.shaft.gui.internal.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:373)
+ com.shaft.gui.internal.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:124)
+ com.shaft.gui.element.internal.ElementActionsHelper.takeScreenshot(ElementActionsHelper.java:594)
+ com.shaft.gui.element.internal.ElementActionsHelper.createReportAttachments(ElementActionsHelper.java:1018)
+ com.shaft.gui.element.internal.ElementActionsHelper.reportActionResult(ElementActionsHelper.java:1056)
+ com.shaft.gui.element.internal.ElementActionsHelper.failAction(ElementActionsHelper.java:957)
+ com.shaft.gui.element.internal.ElementActionsHelper.failAction(ElementActionsHelper.java:899)
+ com.shaft.gui.element.internal.FluentElementActions.waitToBeReady(FluentElementActions.java:1005)
+ com.shaft.gui.element.internal.FluentElementActions.waitToBeReady(FluentElementActions.java:976)
+ com.pages.RegisterPage.addAllData(RegisterPage.java:83)
+ TestCases.RegisterTest.TC_002(RegisterTest.java:35)
+ java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+ java.base/java.lang.reflect.Method.invoke(Method.java:578)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+ org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+ org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+ org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+ org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+ java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+ org.testng.TestRunner.privateRun(TestRunner.java:829)
+ org.testng.TestRunner.run(TestRunner.java:602)
+ org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+ org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.net.http.HttpTimeoutException: request timed out
+ java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:844)
+ java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+ org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:299)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+ com.shaft.gui.internal.image.ScreenshotManager.takeViewportScreenshot(ScreenshotManager.java:236)
+ com.shaft.gui.internal.image.ScreenshotManager.takeFullPageScreenshot(ScreenshotManager.java:263)
+ com.shaft.gui.internal.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:427)
+ com.shaft.gui.internal.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:373)
+ com.shaft.gui.internal.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:124)
+ com.shaft.gui.element.internal.ElementActionsHelper.takeScreenshot(ElementActionsHelper.java:594)
+ com.shaft.gui.element.internal.ElementActionsHelper.createReportAttachments(ElementActionsHelper.java:1018)
+ com.shaft.gui.element.internal.ElementActionsHelper.reportActionResult(ElementActionsHelper.java:1056)
+ com.shaft.gui.element.internal.ElementActionsHelper.failAction(ElementActionsHelper.java:957)
+ com.shaft.gui.element.internal.ElementActionsHelper.failAction(ElementActionsHelper.java:899)
+ com.shaft.gui.element.internal.FluentElementActions.waitToBeReady(FluentElementActions.java:1005)
+ com.shaft.gui.element.internal.FluentElementActions.waitToBeReady(FluentElementActions.java:976)
+ com.pages.RegisterPage.addAllData(RegisterPage.java:83)
+ TestCases.RegisterTest.TC_002(RegisterTest.java:35)
+ java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+ java.base/java.lang.reflect.Method.invoke(Method.java:578)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+ org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+ org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+ org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+ org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+ java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+ org.testng.TestRunner.privateRun(TestRunner.java:829)
+ org.testng.TestRunner.run(TestRunner.java:602)
+ org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+ org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+[WARN ] 2024-03-07 16:23:15.083 [Exec Stream Pumper] ReportManager - console.warn: LoginRecipes: "Falling back to a synchronous message for: https://indigoproviderportal.vercel.app."
+[INFO ] 2024-03-07 16:23:40.874 [main] ReportManager - Successfully created attachment 'Screenshot - 1709821419760_TC_002_Wait to be ready_failed'
+[INFO ] 2024-03-07 16:23:40.881 [main] ReportManager - Successfully created attachment 'Element Action Exception - Wait to be ready - Stacktrace'
+[INFO ] 2024-03-07 16:23:40.902 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: TC_002'
+[INFO ] 2024-03-07 16:23:41.071 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                            Starting execution of suite teardown configuration method                                            
+                                        'com.shaft.listeners.internal.ConfigurationHelper.suiteTeardown'                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2024-03-07 16:23:41.073 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log'
+[INFO ] 2024-03-07 16:23:41.074 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/logs/log4j.log"".
+[INFO ] 2024-03-07 16:23:41.075 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "target/logs/log4j.log"".
