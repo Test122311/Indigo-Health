@@ -28,7 +28,7 @@ public class RegisterTest extends TestBase {
     @Test
     public void TC_002() {
         Faker faker = new Faker();
-        String email =faker.name().firstName()+faker.name().bloodGroup()+"@gmail.com";
+        String email =faker.name().firstName()+faker.name().firstName()+"@gmail.com";
 
         driver.get("https://indigoproviderportal.vercel.app/login");
         RegisterPage.getInstance(driver)

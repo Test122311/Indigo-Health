@@ -5,6 +5,10 @@ import com.github.javafaker.Faker;
 import com.shaft.gui.element.TouchActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class OnboardingPage extends PageBase{
     static OnboardingPage instance;
@@ -16,15 +20,19 @@ public class OnboardingPage extends PageBase{
         }
         return instance;
     }
+
+    By spinner = By.xpath("//*[contains(@id,'welcome')]");
     By startOnboardingBtn = By.xpath("//*[contains(@id,'welcome')]");
     By businessName = By.xpath("//*[contains(@id,'companyName')]");
     By phoneNum = By.xpath("//*[contains(@id,'phoneNumbe')]");
     By npiNumber = By.xpath("//*[contains(@id,'npiNumber')]");
-    By timeZone= By.xpath("//*[contains(@id,'time') and @name = 'timeZoneId' ]");
+    By timeZone= By.xpath("//*[(contains(@id,'time') and @name = 'timeZoneId' ) or @name='timeZoneId' ]");
     By nextBtn= By.xpath("//*[contains(@id,'business-info-bt')]");
     By nextBtn2= By.xpath("//*[contains(@id,'business-logo-btn')]");
-    By nextBtn3= By.xpath("//*[contains(@id,'personal-info");
-    By nextBtn4= By.xpath("//*[contains(@id,'personal-photo");
+
+
+    By nextBtn3= By.xpath("//*[contains(@type,'submit')]");
+    By nextBtn4= By.xpath("//*[contains(@id,'personal-photo')]");
 
     By UserNameInput= By.name("username");
     By PasswordInput=By.name("password");
@@ -89,21 +97,25 @@ public class OnboardingPage extends PageBase{
     }
 
     public void onBoardingData() throws InterruptedException {
+       Thread.sleep(5000);
 
         actions.element()
-                .click(startOnboardingBtn)
-                .type(businessName,faker.company().name())
-                .type(phoneNum,"10"+faker.number().digits(9))
+                .click(startOnboardingBtn);
+       Thread.sleep(10000);
+        actions .element().type(businessName,faker.company().name())
+                .type(phoneNum,"10"+faker.number().digits(8))
                 .type(npiNumber,faker.number().digits(10))
                 .select(timeZone, GeneralConstants.TIME_ZONE)
-                .click(nextBtn)
-                .click(nextBtn2)
-                .type(npiNumberInput,faker.number().digits(10))
-                .click(nextBtn3)
-                .click(nextBtn4);
-        Thread.sleep(1000000);
-               // .select(timeZone,);
-
+                .click(nextBtn);
+        Thread.sleep(10000);
+        actions .element().click(nextBtn2);
+        Thread.sleep(10000);
+        actions .element()
+                .type(npiNumber,faker.number().digits(10))
+                .select(timeZone, GeneralConstants.TIME_ZONE)
+                .click(nextBtn3);
+        Thread.sleep(10000);
+        actions .element().click(nextBtn4);
 
     }
 }
