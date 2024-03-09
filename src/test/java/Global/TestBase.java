@@ -21,7 +21,7 @@ public class TestBase {
     protected static WebDriver driver;
     protected final String URL = "https://indigoproviderportal.vercel.app/login";
     protected RegisterPage RegPage;
-    SHAFT.GUI.WebDriver driver2;
+
 
     @Parameters("browserName")
     @BeforeSuite
