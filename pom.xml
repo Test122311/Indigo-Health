@@ -13,7 +13,7 @@
 
   <properties>
     <!-- Make sure you point to the latest release version: https://github.com/ShaftHQ/SHAFT_ENGINE/releases -->
-    <shaft_engine.version>7.2.20230503</shaft_engine.version>
+    <shaft_engine.version>8.1.20240210</shaft_engine.version>
   </properties>
 
   <repositories>
@@ -36,6 +36,13 @@
       <groupId>com.github.javafaker</groupId>
       <artifactId>javafaker</artifactId>
       <version>1.0.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.9.0</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>

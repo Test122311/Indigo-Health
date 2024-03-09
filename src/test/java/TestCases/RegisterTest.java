@@ -30,10 +30,10 @@ public class RegisterTest extends TestBase {
         Faker faker = new Faker();
         String email =faker.name().firstName()+faker.name().firstName()+"@gmail.com";
 
-        driver.get("https://indigoproviderportal.vercel.app/login");
+        //driver.get("https://indigoproviderportal.vercel.app/login");
         RegisterPage.getInstance(driver)
                 .addAllData(email);
-
+        //new RegisterPage(driver).addAllData(email);
         RegisterPage.getInstance(driver)
                 .confirmationUrl();
 

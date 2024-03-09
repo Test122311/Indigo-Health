@@ -25,10 +25,11 @@ public class TestBase {
 
     @Parameters("browserName")
     @BeforeSuite
-    public void SetUp(String browserName) {
+    public void SetUp(@Optional("SHAFT") String browserName) {
         System.out.println(" The browser name is : " + browserName);
         if (browserName.equalsIgnoreCase("SHAFT")) {
-            driver = DriverFactory.getDriver();
+            DriverFactory DriverF=new DriverFactory();
+            driver = DriverF.getDriver();
         } else if (browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {
@@ -36,7 +37,7 @@ public class TestBase {
         } else if (browserName.equalsIgnoreCase("edge")) {
             driver = new EdgeDriver();
         }
-        RegPage = new RegisterPage(driver);
+        //RegPage = new RegisterPage(driver);
         driver.manage().window().maximize();
         driver.get(URL);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
